@@ -7,14 +7,15 @@ if(isset($_GET['serial']) && isset($_GET['devid']) && isset($_GET['siteid']) && 
     $date->setTimeZone(new DateTimeZone("Asia/Dhaka"));
     $get_datetime = $date->format('d.m.Y H:i:s');
     $json = json_decode(file_get_contents("pinlog.json"),true);
-    $json[] = array('serial'=>$_GET['serial'], 'devid'=>$_GET['devid'], 'siteid'=>$_GET['siteid'], 'imei'=>$_GET['imei'], 'ccid'=>$_GET['ccid'], 'cellno'=>$_GET['cellno'], 'charger'=>array(array('chargerid'=>'01', 'dckwhout'=>$_GET['dckwhout'], 'dcinob'=>$_GET['dcinob'], 'dcoutob'=>$_GET['dcoutob'], 'current'=>$_GET['dccurrentob'], 'watt'=>'0'), array('chargerid'=>'02', 'dckwhout'=>$_GET['dckwhout1'], 'dcinob'=>$_GET['dcinob1'], 'dcoutob'=>$_GET['dcoutob1'], 'current'=>$_GET['dccurrentob1'], 'watt'=>'0'), array('chargerid'=>'03', 'dckwhout'=>$_GET['dckwhout2'], 'dcinob'=>$_GET['dcinob2'], 'dcoutob'=>$_GET['dcoutob2'], 'current'=>$_GET['dccurrentob2'], 'watt'=>'0')), 'inverter'=>array(array('inverterid'=>'01', 'inpower'=>$_GET['inpower'], 'ackwhsun'=>$_GET['ackwhsun'], 'pv1volt'=>$_GET['pv1volt'], 'pv2volt'=>$_GET['pv2volt'], 'avolt'=>$_GET['avolt'], 'bvolt'=>$_GET['bvolt'], 'cvolt'=>$_GET['cvolt'], 'acur'=>$_GET['acur'], 'bcur'=>$_GET['bcur'], 'ccur'=>$_GET['ccur'], 'alarm1'=>$_GET['alarm1'], 'alarm2'=>$_GET['alarm2'], 'alarm3'=>$_GET['alarm3'])),  'dtime'=>$get_datetime);
+    $json[] = array('serial'=>$_GET['serial'], 'devid'=>$_GET['devid'], 'siteid'=>$_GET['siteid'], 'imei'=>$_GET['imei'], 'ccid'=>$_GET['ccid'], 'cellno'=>$_GET['cellno'], 'charger'=>array(array('chargerid'=>'01', 'dckwhout'=>$_GET['dckwhout'], 'dcinob'=>$_GET['dcinob'], 'dcoutob'=>$_GET['dcoutob'])), 'inverter'=>array(array('inverterid'=>'01', 'inpower'=>$_GET['inpower'], 'ackwhsun'=>$_GET['ackwhsun'], 'pv1volt'=>$_GET['pv1volt'], 'pv2volt'=>$_GET['pv2volt'], 'avolt'=>$_GET['avolt'], 'bvolt'=>$_GET['bvolt'], 'cvolt'=>$_GET['cvolt'], 'acur'=>$_GET['acur'], 'bcur'=>$_GET['bcur'], 'ccur'=>$_GET['ccur'], 'alarm1'=>$_GET['alarm1'], 'alarm2'=>$_GET['alarm2'], 'alarm3'=>$_GET['alarm3'])),  'dtime'=>$get_datetime);
     file_put_contents("pinlog.json", json_encode($json));
 
-    echo 'OK ' . $get_datetime;
+    echo 'ok50976';
 }
+
 else
 {
-    echo 'ERROR ' . $get_datetime;
+    echo 'error\r\n';
 }
 
 ?>

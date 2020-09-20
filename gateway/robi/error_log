@@ -1,0 +1,13 @@
+[01-Oct-2014 10:44:05 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/powertec/public_html/log.php on line 119
+[01-Oct-2014 10:44:11 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/powertec/public_html/log.php on line 119
+[01-Oct-2014 10:45:11 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/powertec/public_html/log.php on line 119
+[01-Oct-2014 10:45:13 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/powertec/public_html/log.php on line 119
+[01-Oct-2014 10:47:11 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/powertec/public_html/log.php on line 119
+[01-Oct-2014 10:49:55 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/powertec/public_html/log.php on line 13
+[16-Oct-2014 10:38:01 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'powertec'@'localhost' (using password: NO) in /home/powertec/public_html/datasend.php on line 13
+[16-Oct-2014 10:38:01 America/Chicago] PHP Warning:  mysql_select_db() expects parameter 2 to be resource, boolean given in /home/powertec/public_html/datasend.php on line 15
+[16-Oct-2014 11:50:23 America/Chicago] PHP Warning:  include(db.php): failed to open stream: No such file or directory in /home/powertec/public_html/index.php on line 2
+[16-Oct-2014 11:50:23 America/Chicago] PHP Warning:  include(db.php): failed to open stream: No such file or directory in /home/powertec/public_html/index.php on line 2
+[16-Oct-2014 11:50:23 America/Chicago] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/powertec/public_html/index.php on line 2
+[16-Oct-2014 11:50:23 America/Chicago] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in /home/powertec/public_html/index.php on line 26
+[16-Oct-2014 11:50:23 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in /home/powertec/public_html/index.php on line 33
